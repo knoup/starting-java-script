@@ -1,0 +1,33 @@
+<script>
+// var é global e também local
+// const e let são locais e só funcionam no escopo onde foi criada
+
+
+
+// USANDO const
+const z = 0
+{
+    const z = 1
+    console.log('Dentro do escopo local, z vale ', z)
+}
+console.log('No escopo global, z vale ', z)
+
+
+ 
+
+{ // USANDO let
+    let y = true
+    console.log('> existe y? ', y)
+}    
+
+
+
+
+{ // USANDO var
+    // O JS faz o chamado hoisting quando a variável é global e está em um bloco
+    var x = 0
+}
+
+console.log('> existe x depois do bloco? ', x)
+
+</script>
